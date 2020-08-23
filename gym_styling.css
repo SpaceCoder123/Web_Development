@@ -1,0 +1,120 @@
+body{
+  color: white;
+  
+  background: url("https://i.pinimg.com/564x/78/f7/2e/78f72ef8261120954b8b2192a3ef4815.jpg"), url(https://i.pinimg.com/564x/b4/8c/86/b48c8620e1509a897538b839cf9725ed.jpg);
+  background-position: left, right;
+  background-size: 860px 1080px,960px 1080px;
+  background-repeat: no-repeat;
+  font-family: 'Baloo Tamma 2', cursive;
+  margin: 0;
+  padding: 0;
+  
+}
+.left{
+  /* border: 2px solid red; */
+  display: inline-block;
+  position: absolute;
+  left:30px;
+  top: 10px;
+  /* text-align: center; */
+}
+.left img{
+  display: inline-block;
+  filter: invert();
+  width: 50px;
+  height: 50px;
+}
+.left div{
+  line-height: 19px;
+  text-align: center;
+}
+.mid{
+  display: block;
+  position: absolute;
+  margin: 8px auto;
+  left: 150px;
+  top: 10px;
+}
+.right{
+  display: inline-block;
+  position: absolute;
+  right: 20px;
+  top: 30px;
+  
+}
+
+.NavigationBar{
+  display: inline-block;
+
+}
+
+.NavigationBar li{
+  display: inline-block;
+}
+.NavigationBar li a{
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  padding: 34px 40px;
+}
+.NavigationBar li a:hover, .NavigationBar li a:active{
+  text-decoration: underline;
+  color: rgb(124, 108, 124);
+}
+.btn{
+  font-family: 'Baloo Tamma 2', cursive;
+  margin: 0px 9px;
+  background-color:black;
+  color: white;
+  padding: 4px 2px;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background-color:rgb(121, 112, 121);
+}
+.container{
+
+  border: 2px solid white;
+  margin: 120px 750px;
+  padding: 85px;
+  width: 35%;
+  border-radius: 20px;
+}
+.form-class input {
+  font-family: 'Baloo Tamma 2', cursive;
+  text-align: center;
+  display: block;
+  width: 300px;
+  padding: 4px;
+  border: 2px solid red;
+  font-size: 15px;
+  margin: 11px auto;
+  border-radius: 10px;
+}
+.container h1{
+  text-align: center;
+}
+#TC{
+  display: block;
+  margin: auto;
+}
+.container .btn{
+  display: block;
+  margin: auto;
+  width: 300px;
+  background-color: red;
+}
+.form-class a{
+  display: block;
+  text-align: center;
+  color: white;
+}
+.form-class select{
+  display: block;
+  margin: 35px auto;
+  padding: 10px;
+  border-radius: 20px;
+}
