@@ -10,14 +10,18 @@ main_notes.style.gridColumnGap = "20%";
 main_notes.style.gridRowGap = "30px";
 
 function getValue(){
-  var textvalue = document.querySelector("textarea").value;
+  var textvalue = document.querySelector("#text_area").value;
+  var headvalue= document.querySelector("#text_area_head").value;
+  if (headvalue===""){
+    alert("Do you want to create a note without heading")
+  }
   let notes = localStorage.getItem("notes");
   if (notes == null) {
     notesObj = [];
   } else {
     notesObj = JSON.parse(notes);
   }
-  notesObj.push({ id: "id " + notesObj.length, text: textvalue });
+  notesObj.push({ id: "id " + notesObj.length, text: textvalue,heading: headvalue });
   localStorage.setItem("notes", JSON.stringify(notesObj));
   create_element();
 }
@@ -49,7 +53,7 @@ function create_element() {
     main_Container = document.createElement("div");
     main_Container.setAttribute("class","card")
     main_heading = document.createElement("h3");
-    main_heading.innerText = "Note  " + element.id;
+    main_heading.innerText = element.heading;
     main_heading.setAttribute("id", element.id);
     main_heading.setAttribute("class", "notes");
     main_para = document.createElement("p");
@@ -75,7 +79,7 @@ function create_element() {
     delete_button.style.width = "100px";
     delete_button.innerText = "Delete";
     delete_button.style.borderRadius = "10px";
-    delete_button.style.marginTop = "12.5px";
+    delete_button.style.marginTop = "30px";
     delete_button.style.cursor = "pointer";
   
     //   adding_value
