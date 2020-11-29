@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>College Library</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap"
+            rel="stylesheet">
+    </head>
+    <link rel="stylesheet" href="library.css">
+
+    <body>
+        <nav class="navbar">
+            <div class="left_nav">
+                <ul>
+                    <li><a href="" id="name">Mohan Library</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="right_nav">
+                <input type="text" id="search_box" placeholder="Enter text here">
+                <button class="btn" id="search_button">Search</button>
+            </div>
+        </nav>
+        <div class="data_box">
+            <div class="data_input">
+                <div class="data"> Name:<input type="text" id="Bookname" name="BookDetail" placeholder="Enter here"> </div>
+               <div class="data">  ISBN:<input type="text" id="BookISBN" name="BookDetail" placeholder="Enter here"></div>
+                <div class="data"> Author:<input type="text" id="BookAuthor" name="BookDetail" placeholder="Enter here"></div>      
+            </div>
+            <div class="items">
+                <div class="radiotype"><input type="radio" name="genres"  id="Entertainment" > Entertainment</div>
+                <div class="radiotype"><input type="radio"  name="genres" id="Education"> Education</div>
+                <div class="radiotype"><input type="radio"  name="genres" id="Sports"> Sports</div>
+                <div class="radiotype"><input type="radio"  name="genres" id="Health and Diet">Health and Diet</div>
+                <div class="radiotype"><input type="radio"  name="genres" id="Personal Devolopment"> Personal Devolopment</div> 
+                <div class="radiotype"><input type="radio"  name="genres" id="Others" >Others</div>
+            </div>
+            <button id="add_book" class="btn" onclick="add_book()"> Add book +</button>
+        </div>
+        <div class="addedbooks">
+            <div class="header">
+                <h2 class="header_Element">Name</h2>
+                <h2 class="header_Element">Author</h2>
+                <h2 class="header_Element">Genre</h2>
+                <h2 class="header_Element">ISBN</h2>
+            </div>
+        </div>
+        <div class="popup" id="POPup">
+            <div id="popUpText">
+            </div>
+            <button class="btn_popup" onclick="removePopUp()">X</button>
+        </div>
+    </body>
+    <script src="backend_library.js"></script>
+</html>

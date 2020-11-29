@@ -1,0 +1,155 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    overflow-x: hidden;
+    width: 1535px;
+    height: 1000px;
+    border: 2px solid rebeccapurple;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 600;
+}
+
+nav{
+    display: flex;
+    width: 80%;
+    height: 70px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(238, 194, 238);
+    box-shadow: -0px 10px 10px purple;
+    position: sticky;
+    top: 5px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    
+}
+
+nav .left_nav ul{
+    display: flex;
+    justify-content: space-between;
+    width:400px;
+}
+nav .left_nav ul li{
+    list-style: none;
+}
+nav .left_nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+    top: 3px;
+}
+nav .left_nav ul li #name{
+    font-size: 25px;
+    position: relative;
+    top: 0px;
+    text-decoration: dashed;
+}
+
+nav .right_nav{
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+nav .right_nav input{
+    margin: 20px;
+    width: 150px;    
+    height: 25px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+nav .right_nav .btn{
+    background-color: rgb(184, 150, 218);
+    width: 80px;
+    height: 30px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.btn{
+    background-color: rgb(184, 150, 218);
+    width: 85px;
+    height: 30px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+}
+
+/* Book details data css below  */
+.data_box{  
+    width: 80%;
+    height: 200px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: aquamarine;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0px 10px 10px rgb(4, 119, 81);
+    margin-bottom: 50px;
+}
+.data_box .data_input{
+    margin-top: 20px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+}
+.data_box .items{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* added books */
+.addedbooks{
+    margin: 0%;
+    padding: 0%;
+    width: 80%;
+    height: 900px;
+    
+}
+.addedbooks .header{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-auto-rows: minmax(auto,50px);
+    margin-top: 0;
+    grid-gap: 10px;
+    background-color: rgb(238, 194, 238);
+    box-shadow: 0px 10px 10px rgb(4, 119, 81);
+    
+}
+.addedbooks .header .header_Element{
+    height: 100%;
+    text-align: center;
+    position: relative;
+    top:-10px;
+}
+
+.popup{
+    display: none;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    background-color: chartreuse;
+    position: relative;
+    top: -950px;
+}
+.popup .btn_popup{
+    background-color: rgb(184, 150, 218);
+    width: 45px;
+    height: 30px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+}
